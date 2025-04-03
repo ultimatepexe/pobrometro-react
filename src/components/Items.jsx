@@ -1,6 +1,6 @@
 function Items(props) {
     return (
-        <ul className="text-white list-none justify-self-center max-w-[800px] mx-auto px-4">
+        <ul className="text-white list-none justify-self-center max-w-[800px] mx-auto">
             {props.items.map((item) => 
                 <li className="max-w-[800px] min-w-[320px] bg-neutral-950 grid grid-cols-1 md:grid-cols-3 
                     m-2 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 
