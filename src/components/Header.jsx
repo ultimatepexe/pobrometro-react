@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function Header() {
+function Header(props) {
     const [theme, setTheme] = useState(true)
 
     function toggleMode() {

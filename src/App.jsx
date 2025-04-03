@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Header from "./components/Header"
 import Items from "./components/Items"
+import CreateItem from './components/CreateItem'
 import Footer from './components/Footer'
 
 function App() {
@@ -10,19 +11,19 @@ function App() {
       id: 1,
       image: "/skol.jpg",
       name: "Skol Latao",
-      description: "Imagine afogar as mágoas em [Quantidade de Skol Latão] Skol Latões, adquiridos com [valor inserido pelo usuário] reais. É o kit perfeito para fingir que a vida é uma festa sem fim—pelo menos até o próximo boleto chegar e lembrar que a realidade não bebe junto.",
+      description: "Imagine afogar as mágoas em [quantidade] Skol Latões, adquiridos com [valor] reais. É o kit perfeito para fingir que a vida é uma festa sem fim—pelo menos até o próximo boleto chegar e lembrar que a realidade não bebe junto.",
     },
     {
       id: 2,
       image: "/unoMille.webp",
       name: "Uno Mille",
-      description: "Pense em desfilar por aí com [Quantidade de Uno Mille] Uno Mille(s), conquistados com [valor inserido pelo usuário] reais. Esses carrinhos são o símbolo máximo de quem faz muito com pouco, rodando mais que promessas de academia em janeiro e ainda carregando um charme que nenhum SUV hypado consegue imitar.",
+      description: "Pense em desfilar por aí com [quantidade] Uno Mille(s), conquistados com [valor] reais. Esses carrinhos são o símbolo máximo de quem faz muito com pouco, rodando mais que promessas de academia em janeiro e ainda carregando um charme que nenhum SUV hypado consegue imitar.",
     },
     {
       id: 3,
       image: "/kwid.jpg",
       name: "Kwid",
-      description: "O Kwid é aquele carrinho que parece saído de uma caixa de brinquedos, mas leva ao trabalho—ou pelo menos até o posto mais próximo com gasolina que não custe um rim. Com [valor inserido pelo usuário] reais, poderia ter [quantidade de kwid] dele(s), garantindo um transporte econômico e uma dose de humildade automotiva.",
+      description: "O Kwid é aquele carrinho que parece saído de uma caixa de brinquedos, mas leva ao trabalho—ou pelo menos até o posto mais próximo com gasolina que não custe um rim. Com [valor] reais, poderia ter [quantidade] dele(s), garantindo um transporte econômico e uma dose de humildade automotiva.",
     },
     {
       id: 4,
@@ -82,14 +83,28 @@ function App() {
       id: 13,
       image: "/picanha.png",
       name: "Picanha",
-      description: "Picanha: o soberano da churrasqueira, mais caro que o aluguel, mas capaz de fazer os vizinhos babarem de inveja a cada mordida suculenta. Com [valor] reais, poderia trazer para casa [quantidade de quilos de picanha] quilos, elevando o churrasco ao status de lenda local—e o ego junto."
+      description: "Picanha: o soberano da churrasqueira, mais caro que o aluguel, mas capaz de fazer os vizinhos babarem de inveja a cada mordida suculenta. Com [valor] reais, poderia trazer para casa [quantidade] quilos, elevando o churrasco ao status de lenda local—e o ego junto."
     }
   ])
+
+  const [theme, setTheme] = useState(true)
+
+  function toggleMode() {
+      setTheme((prevTheme) => !prevTheme);
+      if (theme) {
+      document.querySelector("body").style.backgroundColor = "white"
+      } else {
+          document.querySelector("body").style.backgroundColor = "black"
+      }
+  }
 
   return (
     <>
       <Header />
-      <Items items={items} />
+      <ul className="text-white list-none justify-self-center max-w-[800px] mx-auto">
+      <Items items={items} theme={theme} toggleMode={toggleMode} />
+      <CreateItem />
+      </ul>
       <Footer />
     </>
   )
