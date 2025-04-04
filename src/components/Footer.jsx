@@ -30,7 +30,7 @@ function Footer({ theme, converted }) {
     if (converted) {
         return (
             <>
-                <footer className={`grid grid-cols-3 grid-rows-4 gap-y-4 transition-all duration-1000
+                <footer className={`mb-1 grid grid-cols-3 grid-rows-4 gap-y-4 transition-all duration-1000
                 ${theme ? 'text-yellow-300' : 'text-black'} text-center max-w-[800px] justify-self-center font-semibold`}>
                     <p className="col-span-3 text-center text-2xl">
                         Créditos
@@ -53,7 +53,7 @@ function Footer({ theme, converted }) {
                         <FontAwesomeIcon icon={faBitcoin} />
                         DONATE
                     </button>
-                    <div className="h-0.5 text-2xl">
+                    <div className="h-0.5 text-2xl break-all">
                         PapaHardware
                         <div className="justify-center mt-1 h-0.5">
                             <a href="https://youtube.com/@papahardware" target='_blank'><FontAwesomeIcon icon={faYoutube} /></a>
