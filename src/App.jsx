@@ -99,6 +99,13 @@ function App() {
       name: "Picanha",
       description: "Picanha: o soberano da churrasqueira, mais caro que o aluguel, mas capaz de fazer os vizinhos babarem de inveja a cada mordida suculenta. Com [valor] reais, poderia trazer para casa [quantidade] quilos, elevando o churrasco ao status de lenda local—e o ego junto.",
       price: 80.00
+    },
+    {
+      id: 14,
+      image: "rtx5090.png",
+      name: "RTX 5090",
+      description: "A RTX 5090 não é só uma placa de vídeo, é um convite para rodar qualquer jogo no ultra enquanto derrete o orçamento. Com [valor] reais, poderia ter [quantidade] dela(s), transformando seu setup em uma usina de FPS que faria até a NASA sentir inveja—e o disjuntor sentir medo.",
+      price: 25000.00
     }
   ])
 
