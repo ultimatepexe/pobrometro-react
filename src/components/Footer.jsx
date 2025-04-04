@@ -42,7 +42,7 @@ function Footer({ theme, converted }) {
                             <a href="https://youtube.com/@ultimatepexe" target='_blank'><FontAwesomeIcon icon={faYoutube} /></a>
                             <a href="https://x.com/ultimatepexe" target='_blank'><FontAwesomeIcon icon={faXTwitter} /></a>
                             <br />
-                            <a href="https://discord.gg/EMtcBhxZ64" target='_blank'><FontAwesomeIcon icon={faDiscord} /></a>
+                            <a href="https://discord.gg/papahardware" target='_blank'><FontAwesomeIcon icon={faDiscord} /></a>
                             <a href="https://github.com/ultimatepexe" target='_blank'><FontAwesomeIcon icon={faGithub} /></a>
                         </div>
                     </div>
