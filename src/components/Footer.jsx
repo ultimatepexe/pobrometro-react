@@ -65,7 +65,7 @@ function Footer({ theme, converted }) {
                     </div>
 
                     <p className="col-span-3 sm:mt-4">
-                        O <a href="https://pobrometro.pexe.dev" className="hover:underline"><strong>Pobrômetro</strong></a> pode cometer erros, não confie totalmente nos dados fornecidos no site.
+                    O <a href="https://pobrometro.pexe.dev" target="_blank" className="hover:underline"><strong>Pobrômetro</strong></a> é um site de conversão criado apenas para diversão. Os valores são baseados no preço médio dos itens e não refletem cotações oficiais ou precisas.
                     </p>
                 </footer>
 
