@@ -6,6 +6,7 @@ import CreateItem from './components/CreateItem'
 import Footer from './components/Footer'
 
 function App() {
+  const [converted, setConverted] = useState(false)
   const [items, setItems] = useState([
     {
       id: 1,
@@ -110,14 +111,22 @@ function App() {
     })
   }
 
+  function setConvert() {
+    setConverted((prevConverted) => {
+      const newConverted = true
+      document.querySelector("body").style.height = "100%"
+      return newConverted
+    })
+  }
+
   return (
     <>
-      <Header theme={theme} toggleMode={toggleMode} />
+      <Header theme={theme} toggleMode={toggleMode} converted={converted} setConvert={setConvert} />
       <ul className="text-white list-none justify-self-center max-w-[800px] mx-auto mb-10">
-      <Items items={items} theme={theme} />
-      <CreateItem theme={theme} />
+      <Items items={items} theme={theme} converted={converted} />
+      <CreateItem theme={theme} converted={converted} />
       </ul>
-      <Footer theme={theme} />
+      <Footer theme={theme} converted={converted} />
     </>
   )
 }
