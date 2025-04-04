@@ -21,7 +21,7 @@ function Footer({ theme, converted }) {
         {
             type: "Lightning Network",
             address: "sourketchup25@walletofsatoshi.com",
-            qrCode: "/lightning.png"
+            qrCode: "public/lightning.png"
         }
     ];
 

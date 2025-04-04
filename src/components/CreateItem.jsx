@@ -1,5 +1,5 @@
 function CreateItem({ theme, converted }) {
-    const img = theme ? "/add-item-yellow.png" : "/add-item-blue.png"
+    const img = theme ? "public/add-item-yellow.png" : "public/add-item-blue.png"
 
     if (converted) {
         return (
