@@ -1,4 +1,4 @@
-function Header({ theme, toggleMode, converted, setConvert }) {
+function Header({ theme, toggleMode, converted, setConvert, value, setValue }) {
     const mimg = theme ? "/moon.png" : "/sun.png";
 
     return (
@@ -14,7 +14,8 @@ function Header({ theme, toggleMode, converted, setConvert }) {
                         <img src={mimg} alt="Tema" />
                     </div>
                 </div>
-                <input type="number" placeholder="0" min="0" max="999999999999999" maxLength={15} className={`${theme ? 'bg-neutral-900 placeholder-neutral-400 text-white' : 'bg-white placeholder-neutra-900 text-black'} transition-all duration-1000 w-full rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-yellow-300`} />
+                <input type="number" placeholder="0" min="0" max="999999999999999" maxLength={15} className={`${theme ? 'bg-neutral-900 placeholder-neutral-400 text-white' : 'bg-white placeholder-neutral-700 text-black'} transition-all duration-1000 w-full rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-yellow-300`}
+                onChange={(e) => setValue(Number(e.target.value))} />
                 <button className={`${theme ? 'bg-yellow-400 text-black hover:bg-yellow-500 active:bg-yellow-600' : 'bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800'} p-2 rounded-md cursor-pointer active:scale-97 transition-transform`}
                 onClick={setConvert}>
                     CONVERTER

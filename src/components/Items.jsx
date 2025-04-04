@@ -1,4 +1,27 @@
-function Items({ items, theme, converted }) {
+function Items({ items, theme, converted, value }) {
+    function formatNumber(str) {
+        const [integerPart, decimalPart] = str.split('.');
+        const formattedInteger = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        return decimalPart ? `${formattedInteger},${decimalPart}` : formattedInteger;
+    }
+
+    function formatDescription(description, value, price) {
+        const quantity = String(Math.floor(value / price));
+        const formattedValue = value.toFixed(2);
+
+        const formattedText = description
+            .replace(
+                '[quantidade]', 
+                `<span class="quantity ${theme ? 'text-yellow-300' : 'text-blue-600'} font-semibold">${formatNumber(quantity)}</span>`
+            )
+            .replace(
+                '[valor]', 
+                `<span class="value ${theme ? 'text-green-400' : 'text-green-600'} font-semibold">${formatNumber(formattedValue)}</span>`
+            );
+
+        return <span dangerouslySetInnerHTML={{ __html: formattedText }} />;
+    }
+
     if (converted) {
         return (
             <>
@@ -18,7 +41,7 @@ function Items({ items, theme, converted }) {
                             </h2>
                             <p className={`text-sm leading-relaxed transition-all duration-1000
                                 ${theme ? 'text-white/80' : 'text-black'}`}>
-                                {item.description}
+                                {formatDescription(item.description, value, item.price)}
                             </p>
                         </article>
                     </li>

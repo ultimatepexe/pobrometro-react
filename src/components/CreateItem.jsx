@@ -3,7 +3,7 @@ function CreateItem({ theme, converted }) {
 
     if (converted) {
         return (
-            <li onClick={() => addItem()}
+            <li onClick={() => window.alert("Em desenvolvimento.")}
             className={`cursor-pointer max-w-[800px] min-w-[320px] rounded-2xl justify-self-center m-2 h-48 text-3xl shadow-lg border
             grid grid-cols-2 grid-rows-1 
             text-center
