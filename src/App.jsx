@@ -130,14 +130,14 @@ function App() {
   }
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col items-center">
       <Header theme={theme} toggleMode={toggleMode} converted={converted} setConvert={setConvert} value={value} setValue={setValue} />
-      <ul className="text-white list-none justify-self-center max-w-[800px] mx-auto mb-10">
-      <Items items={items} theme={theme} converted={converted} value={value} />
-      <CreateItem theme={theme} converted={converted} />
+      <ul className="text-white list-none max-w-[800px] w-full mb-10">
+        <Items items={items} theme={theme} converted={converted} value={value} />
+        <CreateItem theme={theme} converted={converted} />
       </ul>
       <Footer theme={theme} converted={converted} />
-    </>
+    </div>
   )
 }
 
