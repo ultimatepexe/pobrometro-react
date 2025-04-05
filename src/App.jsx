@@ -12,7 +12,7 @@ function App() {
     {
       id: 1,
       image: "skol.jpg",
-      name: "Skol Latao",
+      name: "Skol Latão",
       description: "Imagine afogar as mágoas em [quantidade] Skol Latões, adquiridos com [valor] reais. É o kit perfeito para fingir que a vida é uma festa sem fim—pelo menos até o próximo boleto chegar e lembrar que a realidade não bebe junto.",
       price: 5.00
     },
@@ -34,28 +34,28 @@ function App() {
       id: 4,
       image: "coffee.jpg",
       name: "Café",
-      description: "Café: o pó sagrado que arranca da cama e prepara para encarar o chefe, mesmo que o orçamento fique tremendo na base. Com [valor] reais, poderia encher o armário com [quantidade] pacotes de 500g, porque nada diz 'sobrevivi à segunda-feira' como uma xícara fumegante e um leve arrependimento financeiro.",
+      description: "O pó sagrado que arranca da cama e prepara para encarar o chefe, mesmo que o orçamento fique tremendo na base. Com [valor] reais, poderia encher o armário com [quantidade] pacotes de 500g, porque nada diz 'sobrevivi à segunda-feira' como uma xícara fumegante e um leve arrependimento financeiro.",
       price: 28.00
     },
     {
       id: 5,
       image: "leite.png",
       name: "Leite",
-      description: "Leite: o líquido branquinho que jura deixar saudável, mas cujo preço sobe mais rápido que a pressão nas discussões familiares. Ainda assim, com [valor] reais, poderia levar para casa [quantidade] litros, mantendo o café com leite e o sonho de ossos fortes vivos por mais um dia.",
+      description: "O líquido branquinho que jura deixar saudável, mas cujo preço sobe mais rápido que a pressão nas discussões familiares. Ainda assim, com [valor] reais, poderia levar para casa [quantidade] litros, mantendo o café com leite e o sonho de ossos fortes vivos por mais um dia.",
       price: 5.50
     },
     {
       id: 6,
       image: "ovos.png",
       name: "Ovos",
-      description: "Os ovos já foram a salvação da cozinha simples, mas hoje fritar um é quase um evento de luxo. Com [valor] reais, poderia ostentar [quantidade] dú SULza(s), transformando o café da manhã em uma experiência gourmet que até o Instagram vai invejar—seja lá o que 'gourmet' signifique hoje em dia.",
+      description: "Os ovos já foram a salvação da cozinha simples, mas hoje fritar um é quase um evento de luxo. Com [valor] reais, poderia ostentar [quantidade] dúzia(s), transformando o café da manhã em uma experiência gourmet que até o Instagram vai invejar—seja lá o que 'gourmet' signifique hoje em dia.",
       price: 15.00
     },
     {
       id: 7,
       image: "brahma.png",
       name: "Brahma",
-      description: "Brahma: a cerveja que promete uma festa épica, mas muitas vezes só anima o vizinho gritando pro juiz na TV. Com [valor] reais, poderia estocar [quantidade] fardos de 12 latas de 350ml, perfeito para celebrar os gols ou afogar as derrotas com aquele gostinho gelado de 'quem precisa de balada?'.",
+      description: "A cerveja que promete uma festa épica, mas muitas vezes só anima o vizinho gritando pro juiz na TV. Com [valor] reais, poderia estocar [quantidade] fardos de 12 latas de 350ml, perfeito para celebrar os gols ou afogar as derrotas com aquele gostinho gelado de 'quem precisa de balada?'.",
       price: 48.00
     },
     {
@@ -76,14 +76,14 @@ function App() {
       id: 10,
       image: "azeite.png",
       name: "Azeite",
-      description: "Azeite: o ouro líquido que transforma qualquer receita, mesmo que o jantar acabe queimado na tentativa de parecer chef. Com [valor] reais, poderia levar [quantidade] garrafas de 500ml, porque até um macarrão meia-boca merece um toque de classe—e uma pitada de arrependimento no bolso.",
+      description: "O ouro líquido que transforma qualquer receita, mesmo que o jantar acabe queimado na tentativa de parecer chef. Com [valor] reais, poderia levar [quantidade] garrafas de 500ml, porque até um macarrão meia-boca merece um toque de classe—e uma pitada de arrependimento no bolso.",
       price: 25.00
     },
     {
       id: 11,
       image: "corote.png",
       name: "Corote",
-      description: "Corote: o titã das geladas, ideal pra quem quer festa barata e barulho garantido sem se preocupar com etiqueta. Com [valor] reais, poderia-dado [quantidade] liters, transformando qualquer rolê num evento épico que ninguém vai lembrar direito no dia seguinte.",
+      description: "O titã das geladas, ideal pra quem quer festa barata e barulho garantido sem se preocupar com etiqueta. Com [valor] reais, poderia-dado [quantidade] liters, transformando qualquer rolê num evento épico que ninguém vai lembrar direito no dia seguinte.",
       price: 15.00
     },
     {
@@ -97,7 +97,7 @@ function App() {
       id: 13,
       image: "picanha.png",
       name: "Picanha",
-      description: "Picanha: o soberano da churrasqueira, mais caro que o aluguel, mas capaz de fazer os vizinhos babarem de inveja a cada mordida suculenta. Com [valor] reais, poderia trazer para casa [quantidade] quilos, elevando o churrasco ao status de lenda local—e o ego junto.",
+      description: "O soberano da churrasqueira, mais caro que o aluguel, mas capaz de fazer os vizinhos babarem de inveja a cada mordida suculenta. Com [valor] reais, poderia trazer para casa [quantidade] quilos, elevando o churrasco ao status de lenda local—e o ego junto.",
       price: 80.00
     },
     {
