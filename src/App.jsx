@@ -129,12 +129,19 @@ function App() {
     }
   }
 
+  const addItem = (newItem) => {
+    setItems(prevItems => [...prevItems, {
+      id: prevItems.length + 1,
+      ...newItem
+    }])
+  }
+
   return (
     <div className="min-h-screen flex flex-col items-center">
       <Header theme={theme} toggleMode={toggleMode} converted={converted} setConvert={setConvert} value={value} setValue={setValue} />
       <ul className="text-white list-none max-w-[800px] w-full mb-10">
         <Items items={items} theme={theme} converted={converted} value={value} />
-        <CreateItem theme={theme} converted={converted} />
+        <CreateItem theme={theme} converted={converted} addItem={addItem} />
       </ul>
       <Footer theme={theme} converted={converted} />
     </div>
