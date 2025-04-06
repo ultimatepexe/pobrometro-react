@@ -3,7 +3,7 @@ function Header({ theme, toggleMode, converted, setConvert, value, setValue }) {
 
     return (
         <header className={`text-white max-w-[800px] min-w-[320px] justify-self-center p-[5px] font-semibold font-sans
-        ${converted ? 'pt-0' : 'pt-[15vh]'} transition-all duration-1000`}>
+        ${converted ? 'pt-0' : 'pt-[10vh] md:pt-[15vh]'} transition-all duration-1000`}>
             <img src="pobrometro-logo.png" alt="Pobrômetro" />
             <p className={`${theme ? 'text-yellow-300' : 'text-black'} mb-2 transition-all duration-1000`}>
                 Bem-vindo ao <strong>Pobrômetro</strong>, sua ferramenta definitiva para decifrar os mistérios dos números e descobrir o que realmente significam aqueles valores em reais no seu dia a dia! Aqui, transformamos cifras complicadas em comparações simples e divertidas, convertendo seu dinheiro em coisas que você entende – de cafezinhos a compras dos sonhos. Nosso objetivo? Te dar uma visão clara (ou pelo menos uma ilusão bem convincente) sobre como <em>seu suado dinheirinho</em> é gasto, investido ou, quem sabe, perdido no éter das contas e impostos. Prepare-se para rir, refletir e, talvez, chorar um pouco!
