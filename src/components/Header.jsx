@@ -1,3 +1,5 @@
+import CurrencyInput from 'react-currency-input-field';
+
 function Header({ theme, toggleMode, converted, setConvert, value, setValue }) {
     const mimg = theme ? "moon.png" : "sun.png";
 
@@ -14,8 +16,15 @@ function Header({ theme, toggleMode, converted, setConvert, value, setValue }) {
                         <img src={mimg} alt="Tema" />
                     </div>
                 </div>
-                <input type="number" placeholder="0" min="0" max="999999999999999" maxLength={15} className={`${theme ? 'bg-neutral-900 placeholder-neutral-400 text-white focus:ring-yellow-300' : 'bg-white placeholder-neutral-700 text-black focus:ring-blue-600'} transition-all duration-1000 w-full rounded-md p-2 focus:outline-none focus:ring-2`}
-                onChange={(e) => setValue(Number(e.target.value))} />
+                <CurrencyInput
+                    value={value}
+                    onValueChange={(value, name, values) => setValue(values.float !== null ? values.float : 0)}
+                    placeholder="0"
+                    fixedDecimalLength={2}
+                    allowNegativeValue={false}
+                    intlConfig={{ locale: 'pt-BR', currency: 'BRL' }}
+                    className={`${theme ? 'bg-neutral-900 placeholder-neutral-400 text-white focus:ring-yellow-300' : 'bg-white placeholder-neutral-700 text-black focus:ring-blue-600'} transition-all duration-1000 w-full rounded-md p-2 focus:outline-none focus:ring-2`}
+                />
                 <button className={`${theme ? 'bg-yellow-400 text-black hover:bg-yellow-500 active:bg-yellow-600' : 'bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800'} p-2 rounded-md cursor-pointer active:scale-97 transition-transform`}
                 onClick={setConvert}>
                     CONVERTER
