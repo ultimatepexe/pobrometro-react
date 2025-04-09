@@ -16,22 +16,25 @@ function Header({ theme, toggleMode, converted, setConvert, value, setValue }) {
                         <img src={mimg} alt="Tema" />
                     </div>
                 </div>
-                <CurrencyInput
-                    value={value}
-                    onValueChange={(value, name, values) => setValue(values.float !== null ? values.float : 0)}
-                    placeholder="0"
-                    fixedDecimalLength={2}
-                    allowNegativeValue={false}
-                    intlConfig={{ locale: 'pt-BR', currency: 'BRL' }}
-                    className={`${theme ? 'bg-neutral-900 placeholder-neutral-400 text-white focus:ring-yellow-300' : 'bg-white placeholder-neutral-700 text-black focus:ring-blue-600'} transition-all duration-1000 w-full rounded-md p-2 focus:outline-none focus:ring-2`}
-                />
+                <div className={`flex items-center ${theme ? 'bg-neutral-900' : 'bg-white'} transition-all duration-1000 w-full rounded-md p-2 focus-within:ring-2 ${theme ? 'focus-within:ring-yellow-300' : 'focus-within:ring-blue-600'}`}>
+                    <p className={`${theme ? 'text-white' : 'text-black'} mr-2`}>R$</p>
+                    <CurrencyInput
+                        value={value}
+                        onValueChange={(value, name, values) => setValue(values.float !== null ? values.float : 0)}
+                        placeholder="0"
+                        allowNegativeValue={false}
+                        maxLength={17}
+                        className="bg-transparent outline-none w-full"
+                        style={{ color: theme ? 'white' : 'black' }}
+                    />
+                </div>
                 <button className={`${theme ? 'bg-yellow-400 text-black hover:bg-yellow-500 active:bg-yellow-600' : 'bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800'} p-2 rounded-md cursor-pointer active:scale-97 transition-transform`}
                 onClick={setConvert}>
                     CONVERTER
                 </button>
             </div>
         </header>
-    )
+    );
 }
 
-export default Header
+export default Header;
