@@ -1,7 +1,7 @@
-import CurrencyInput from 'react-currency-input-field';
+import CurrencyInput from 'react-currency-input-field'
 
 function Header({ theme, toggleMode, converted, setConvert, value, setValue }) {
-    const mimg = theme ? "moon.png" : "sun.png";
+    const mimg = theme ? "moon.png" : "sun.png"
 
     return (
         <header className={`text-white max-w-[800px] min-w-[320px] justify-self-center p-[5px] font-semibold font-sans
@@ -37,4 +37,4 @@ function Header({ theme, toggleMode, converted, setConvert, value, setValue }) {
     );
 }
 
-export default Header;
+export default Header
