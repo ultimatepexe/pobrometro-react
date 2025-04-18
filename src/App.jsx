@@ -106,6 +106,13 @@ function App() {
       name: "RTX 5090",
       description: "A RTX 5090 não é só uma placa de vídeo, é um convite para rodar qualquer jogo no ultra enquanto derrete o orçamento. Com [valor] reais, poderia ter [quantidade] dela(s), transformando seu setup em uma usina de FPS que faria até a NASA sentir inveja—e o disjuntor sentir medo.",
       price: 25000.00
+    },
+    {
+      id: 15,
+      image: "rtx5060ti.png",
+      name: "RTX 5060Ti",
+      description: "A RTX 5060Ti chegou prometendo gráficos de outro mundo, mas o salto de desempenho desde a 4060Ti aumentou mais que o seu salário—ou seja, quase nada. Com [valor] reais, poderia ter [quantidade] dela(s), pra rodar jogos no ultra enquanto se pergunta se valeu o rombo no orçamento.",
+      price: 4000.00
     }
   ])
 
