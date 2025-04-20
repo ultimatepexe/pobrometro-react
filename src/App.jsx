@@ -113,6 +113,13 @@ function App() {
       name: "RTX 5060Ti",
       description: "A RTX 5060Ti chegou prometendo gráficos de outro mundo, mas o salto de desempenho desde a 4060Ti aumentou mais que o seu salário—ou seja, quase nada. Com [valor] reais, poderia ter [quantidade] dela(s), pra rodar jogos no ultra enquanto se pergunta se valeu o rombo no orçamento.",
       price: 4000.00
+    },
+    {
+      id: 16,
+      image: "kinderovo.png",
+      name: "Kinder Ovo Maxi Natoons",
+      description: "O ovo de chocolate que traz um brinquedo e a promessa de alegria infantil—até o preço lembrar que a Páscoa não perdoa o bolso. Com [valor] reais, poderia garantir [quantidade] unidades de 150g, tornando o feriado mais doce e o orçamento um pouco mais amargo.",
+      price: 145.99
     }
   ])
 
