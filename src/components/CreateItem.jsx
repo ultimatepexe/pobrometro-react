@@ -46,7 +46,7 @@ function CreateItem({ theme, converted, addItem }) {
                     </h2>
                     <form onSubmit={handleSubmit}>
                         <label htmlFor="name" className="p-1">
-                            Name:
+                            Nome:
                         </label>
                         <br />
                         <input 
@@ -58,7 +58,7 @@ function CreateItem({ theme, converted, addItem }) {
                         />
                         <br />
                         <label htmlFor="description" className="p-1">
-                            Description:
+                            Descrição:
                         </label>
                         <br />
                         <textarea
@@ -67,14 +67,12 @@ function CreateItem({ theme, converted, addItem }) {
                             onChange={handleInputChange}
                             rows="4"
                             className={`${theme ? 'bg-neutral-900 placeholder-neutral-400 text-white focus:ring-yellow-300' : 'bg-neutral-300 placeholder-neutral-700 text-black focus:ring-blue-600'} transition-color w-full rounded-md p-2 focus:outline-none focus:ring-2 min-h-30`}
-                            placeholder="Escreva a descrição aqui..."
                         />
-                        <p className="text-sm text-gray-500 mt-1">
+                        <p className="text-sm text-gray-500 mt-1 pl-1 pr-1">
                             Dica: Use [valor] e [quantidade] na descrição para incluir o valor e a quantidade calculada automaticamente.
                         </p>
-                        <br />
                         <label htmlFor="price" className="p-1">
-                            Price:
+                            Preço:
                         </label>
                         <br />
                         <input 
