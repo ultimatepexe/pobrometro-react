@@ -39,7 +39,7 @@ function CreateItem({ theme, converted, addItem }) {
     if (converted) {
         if (creating) {
             return (
-                <li className={`max-w-[800px] min-w-[320px] rounded-2xl justify-self-center p-4 m-2 h-114 text-2xl shadow-lg border
+                <li className={`max-w-[800px] min-w-[320px] rounded-2xl justify-self-center p-4 m-2 h-full text-2xl shadow-lg border
                 ${theme ? 'bg-neutral-950 border-neutral-800 text-white' : 'bg-white border-neutral-400 text-black'}`}>
                     <h2 className="justify-self-center text-3xl p-2">
                         Create Item
@@ -54,20 +54,24 @@ function CreateItem({ theme, converted, addItem }) {
                             id="name" 
                             value={formData.name}
                             onChange={handleInputChange}
-                            className={`${theme ? 'bg-neutral-900 placeholder-neutral-400 text-white focus:ring-yellow-300' : 'bg-neutral-300  placeholder-neutral-700 text-black focus:ring-blue-600'} transition-all duration-500 w-full rounded-md p-2 focus:outline-none focus:ring-2`} 
+                            className={`${theme ? 'bg-neutral-900 placeholder-neutral-400 text-white focus:ring-yellow-300' : 'bg-neutral-300 placeholder-neutral-700 text-black focus:ring-blue-600'} transition-all duration-500 w-full rounded-md p-2 focus:outline-none focus:ring-2`} 
                         />
                         <br />
                         <label htmlFor="description" className="p-1">
                             Description:
                         </label>
                         <br />
-                        <input 
-                            type="text" 
-                            id="description" 
+                        <textarea
+                            id="description"
                             value={formData.description}
                             onChange={handleInputChange}
-                            className={`${theme ? 'bg-neutral-900 placeholder-neutral-400 text-white focus:ring-yellow-300' : 'bg-neutral-300  placeholder-neutral-700 text-black focus:ring-blue-600'} transition-all duration-500 w-full rounded-md p-2 focus:outline-none focus:ring-2`} 
+                            rows="4"
+                            className={`${theme ? 'bg-neutral-900 placeholder-neutral-400 text-white focus:ring-yellow-300' : 'bg-neutral-300 placeholder-neutral-700 text-black focus:ring-blue-600'} transition-color w-full rounded-md p-2 focus:outline-none focus:ring-2 min-h-30`}
+                            placeholder="Escreva a descrição aqui..."
                         />
+                        <p className="text-sm text-gray-500 mt-1">
+                            Dica: Use [valor] e [quantidade] na descrição para incluir o valor e a quantidade calculada automaticamente.
+                        </p>
                         <br />
                         <label htmlFor="price" className="p-1">
                             Price:
@@ -78,7 +82,7 @@ function CreateItem({ theme, converted, addItem }) {
                             id="price" 
                             value={formData.price}
                             onChange={handleInputChange}
-                            className={`${theme ? 'bg-neutral-900 placeholder-neutral-400 text-white focus:ring-yellow-300' : 'bg-neutral-300  placeholder-neutral-700 text-black focus:ring-blue-600'} transition-all duration-500 w-full rounded-md p-2 focus:outline-none focus:ring-2`} 
+                            className={`${theme ? 'bg-neutral-900 placeholder-neutral-400 text-white focus:ring-yellow-300' : 'bg-neutral-300 placeholder-neutral-700 text-black focus:ring-blue-600'} transition-all duration-500 w-full rounded-md p-2 focus:outline-none focus:ring-2`} 
                         />
                         <br />
                         <label htmlFor="image" className="p-1">
