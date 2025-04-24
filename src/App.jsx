@@ -113,6 +113,13 @@ function App() {
       name: "RTX 5060Ti",
       description: "A RTX 5060Ti chegou prometendo gráficos de outro mundo, mas o salto de desempenho desde a 4060Ti aumentou mais que o seu salário—ou seja, quase nada. Com [valor] reais, poderia ter [quantidade] dela(s), pra rodar jogos no ultra enquanto se pergunta se valeu o rombo no orçamento.",
       price: 4000.00
+    },
+    {
+      id: 16,
+      image: "buraco.png",
+      name: "Minha Casa Minha Vida",
+      description: "O sonho de chamar um cantinho de seu, mesmo que venha com prestações mais longas que novela das nove. Com [valor] reais, poderia garantir [quantidade] casa(s) do Minha Casa Minha Vida, perfeitas para pendurar um varal no quintal e fingir que o IPTU não tá chegando com cara de vilão de filme de ação.",
+      price: 200000.00,
     }
   ])
 
