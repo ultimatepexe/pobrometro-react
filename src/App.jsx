@@ -119,7 +119,14 @@ function App() {
       image: "buraco.png",
       name: "Minha Casa Minha Vida",
       description: "O sonho de chamar um cantinho de seu, mesmo que venha com prestações mais longas que novela das nove. Com [valor] reais, poderia garantir [quantidade] casa(s) do Minha Casa Minha Vida, perfeitas para pendurar um varal no quintal e fingir que o IPTU não tá chegando com cara de vilão de filme de ação.",
-      price: 200000.00,
+      price: 200000.00
+    },
+    {
+      id: 17,
+      image: "suamae.png",
+      name: "Sua Mãe",
+      description: 'Imagine ter [quantidade] cópias de "Sua Mãe", adquiridas com [valor] reais. É como ter uma família numerosa, mas sem as brigas por herança. Com tantas mães virtuais, você nunca mais vai esquecer de lavar o prato—ou pelo menos vai ter alguém para te lembrar o tempo todo.',
+      price: 2.79
     }
   ])
 
