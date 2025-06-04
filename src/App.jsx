@@ -127,6 +127,13 @@ function App() {
       name: "Sua Mãe",
       description: 'Imagine ter [quantidade] cópias de "Sua Mãe", adquiridas com [valor] reais. É como ter uma família numerosa, mas sem as brigas por herança. Com tantas mães virtuais, você nunca mais vai esquecer de lavar o prato—ou pelo menos vai ter alguém para te lembrar o tempo todo.',
       price: 2.79
+    },
+    {
+      id: 18,
+      image: "xeon.webp",
+      name: "Intel Xeon E5-2670 v2",
+      description: "O processador favorito da galera que monta setup parrudo com troco de pão. Com [valor] reais, poderia ter [quantidade] Xeon E5-2670 v2, a lenda dos gabinetes barulhentos e renderizações eternas. Ideal pra quem quer potência bruta sem estourar o cartão—só o limite térmico.",
+      price: 90.00
     }
   ])
 
